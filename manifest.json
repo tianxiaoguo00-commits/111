@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "GitHub 一键汉化",
+  "version": "1.0.0",
+  "description": "自动将 GitHub 常用界面翻译为简体中文，可随时切换原文。",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
